@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name" translatable="false">NewsFeed</string>
+    <string name="version_name">version: %s</string>
+
+    <string name="server_error_title">Server unreachable</string>
+    <string name="server_error_description">That is not your fault. Something went wrong with our server. We are working on it.</string>
+    <string name="try_again">Try again</string>
+
+    <!--  Connection Status  -->
+    <string name="connection_status_available">Connection available</string>
+    <string name="connection_status_unavailable">Connection unavailable</string>
+    <string name="connection_status_losing">Losing connection</string>
+    <string name="connection_status_lost">Connection lost</string>
+
+    <!--  Content Description  -->
+    <string name="arrow_back_icon_description">Arrow back icon</string>
+    <string name="menu_icon_description">Menu icon</string>
+    <string name="close_icon_description">Close icon</string>
+</resources>
