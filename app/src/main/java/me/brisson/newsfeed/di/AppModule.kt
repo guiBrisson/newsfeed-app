@@ -6,6 +6,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
+import me.brisson.newsfeed.BuildConfig
 import me.brisson.newsfeed.data.NetworkConnectivityObserver
 import me.brisson.newsfeed.data.data_source.remote.NewsFeedApi
 import me.brisson.newsfeed.data.repository.CategoryRepositoryImpl
@@ -27,7 +28,7 @@ object AppModule {
     @Singleton
     fun providesRetrofit(): NewsFeedApi {
         return Retrofit.Builder()
-            .baseUrl("https://newsfeed-api-production.up.railway.app/")
+            .baseUrl(BuildConfig.API_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(NewsFeedApi::class.java)
